@@ -21,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body className={`${pretendard.className} antialiased`}>{children}</body>
+    <html lang="ko" className="h-full">
+      <body className={`${pretendard.className} h-full antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
