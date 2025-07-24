@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 import { Button } from "@/components/Button";
-import { SelectableLink } from "@/components/SelectableLink";
+import { NavigationLink } from "@/components/NavigationLink";
 
 export default function NavigationLayout({ children }: PropsWithChildren) {
   return (
@@ -14,15 +14,15 @@ export default function NavigationLayout({ children }: PropsWithChildren) {
           </h1>
         </Link>
         <nav className="flex items-center gap-4">
-          <SelectableLink className="text-base font-semibold" href="/search">
+          <NavigationLink className="text-base font-semibold" href="/search">
             바 찾아보기
-          </SelectableLink>
-          <SelectableLink className="text-base font-semibold" href="/review">
+          </NavigationLink>
+          <NavigationLink className="text-base font-semibold" href="/review">
             리뷰
-          </SelectableLink>
-          <SelectableLink className="text-base font-semibold" href="community">
+          </NavigationLink>
+          <NavigationLink className="text-base font-semibold" href="community">
             커뮤니티
-          </SelectableLink>
+          </NavigationLink>
         </nav>
         <Button size="sm">앱 추가하기</Button>
       </header>
