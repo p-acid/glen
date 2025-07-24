@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
-import { Button } from "@/components/Button";
-import { NavigationLink } from "@/components/NavigationLink";
+import { Button, NavigationLink } from "@/components";
 
 export default function NavigationLayout({ children }: PropsWithChildren) {
   return (
