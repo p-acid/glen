@@ -20,6 +20,13 @@
   }
 }
 
+@utility avatar {
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
