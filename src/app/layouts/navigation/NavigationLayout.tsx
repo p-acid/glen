@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
-import { CurrentUser } from "@/features/me";
+import { CurrentUser } from "@/features/auth";
 
 import { NavigationLink } from "./NavigationLink";
 
