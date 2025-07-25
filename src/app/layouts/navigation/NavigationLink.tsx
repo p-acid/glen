@@ -3,7 +3,7 @@
 import Link, { LinkProps } from "next/link";
 import { AnchorHTMLAttributes } from "react";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/shared/utils/cn";
 import { usePathname } from "next/navigation";
 
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & LinkProps;
@@ -11,7 +11,7 @@ type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & LinkProps;
 export function NavigationLink({ className, href, ...props }: Props) {
   const pathname = usePathname();
 
-  const isSelected = pathname.includes(href.toString());
+  const isSelected = pathname?.includes(href.toString());
 
   return (
     <Link

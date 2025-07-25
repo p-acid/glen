@@ -1,7 +1,6 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import "@/styles/globals.css";
+import "@/app/styles/globals.css";
 
 const pretendard = localFont({
   src: "../fonts/PretendardVariable.woff2",
@@ -10,12 +9,7 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export const metadata: Metadata = {
-  title: "Glen",
-  description: "Glen for Bars",
-};
-
-export default function RootLayout({
+export function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
