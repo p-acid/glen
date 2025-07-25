@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
-import { NavigationLink } from "@/components";
-import { Profile } from "@/components/Profile";
+import { CurrentUser } from "@/features/me";
 
-export default function NavigationLayout({ children }: PropsWithChildren) {
+import { NavigationLink } from "./NavigationLink";
+
+export function NavigationLayout({ children }: PropsWithChildren) {
   return (
     <div className="h-full w-full">
       <header className="container sticky left-0 right-0 top-0 z-50 flex items-center justify-between py-5">
@@ -29,7 +30,7 @@ export default function NavigationLayout({ children }: PropsWithChildren) {
             </NavigationLink>
           </nav>
         </div>
-        <Profile />
+        <CurrentUser />
       </header>
       {children}
     </div>
