@@ -3,6 +3,7 @@
 import { ComponentProps } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { OverlayControllerComponent } from "overlay-kit";
+import { X } from "lucide-react";
 
 import { cn } from "../utils/cn";
 
@@ -34,7 +35,7 @@ export function Dialog({
             role="dialog"
             aria-modal="true"
             className={cn(
-              "bg-surface w-full max-w-md rounded-2xl p-6 opacity-100 shadow-xl",
+              "bg-surface relative w-full max-w-md rounded-2xl p-6 opacity-100 shadow-xl",
               "max-md:fixed max-md:bottom-0 max-md:left-0 max-md:right-0 max-md:max-w-full max-md:rounded-b-none",
               className,
             )}
@@ -45,5 +46,19 @@ export function Dialog({
         </motion.div>
       )}
     </AnimatePresence>
+  );
+}
+
+export function DialogClose({ className, ...props }: ComponentProps<"button">) {
+  return (
+    <button
+      className={cn(
+        "absolute right-5 top-5 rounded-full p-1.5 transition-colors duration-200 hover:bg-white/5",
+        className,
+      )}
+      {...props}
+    >
+      <X className="text-foreground size-6" />
+    </button>
   );
 }
