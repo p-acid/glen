@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 
+import { Providers } from "../providers";
+
 import "@/app/styles/globals.css";
 
 const pretendard = localFont({
@@ -17,7 +19,7 @@ export function RootLayout({
   return (
     <html lang="ko" className="h-full">
       <body className={`${pretendard.className} h-full antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
