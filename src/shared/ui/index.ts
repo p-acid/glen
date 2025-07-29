@@ -1,3 +1,3 @@
 export { Button } from "./Button";
 export { Avatar } from "./Avatar";
-export { Dialog } from "./Dialog";
+export { Dialog, DialogClose } from "./Dialog";

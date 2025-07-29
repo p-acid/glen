@@ -1,7 +1,3 @@
 export function SearchPage() {
-  return (
-    <div>
-      <h1>Search Component</h1>
-    </div>
-  );
+  return <div className="container">Search Page</div>;
 }
