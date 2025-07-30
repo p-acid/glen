@@ -1,10 +1,10 @@
 "use client";
 
 import Link, { LinkProps } from "next/link";
+import { usePathname } from "next/navigation";
 import { AnchorHTMLAttributes } from "react";
 
 import { cn } from "@/shared/utils/cn";
-import { usePathname } from "next/navigation";
 
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & LinkProps;
 
