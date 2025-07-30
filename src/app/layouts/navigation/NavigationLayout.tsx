@@ -8,7 +8,7 @@ import { NavigationLink } from "./NavigationLink";
 export function NavigationLayout({ children }: PropsWithChildren) {
   return (
     <div className="h-full w-full">
-      <header className="container sticky left-0 right-0 top-0 z-50 flex items-center justify-between py-5">
+      <header className="bg-background container sticky left-0 right-0 top-0 z-50 flex items-center justify-between py-5">
         <div className="flex items-center gap-14">
           <Link href="/">
             <h1 className="text-2xl font-extrabold tracking-tighter text-white">
