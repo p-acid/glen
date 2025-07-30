@@ -6,6 +6,7 @@
   --color-surface: var(--color-neutral-900);
   --color-primary: var(--color-emerald-700);
   --color-primary-foreground: var(--color-neutral-50);
+  --color-border: var(--color-neutral-600);
 }
 
 @utility container {
@@ -19,6 +20,13 @@
 
   @media (min-width: 1000px) {
     padding-inline: 64px;
+  }
+}
+
+@utility search-cancle-none {
+  &[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
   }
 }
 
