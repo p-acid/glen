@@ -10,7 +10,7 @@ export function InlineSearchForm() {
   return (
     <form
       role="search"
-      className="border-border ring-border/50 flex h-12 items-center gap-3 rounded-3xl border pl-5 pr-2 transition-shadow focus-within:ring-4"
+      className="border-border ring-border/50 pl-4.5 flex h-11 items-center gap-3 rounded-3xl border pr-2 transition-shadow focus-within:ring-4"
     >
       <input
         className="search-cancle-none flex-grow text-base font-medium focus:outline-none"
